@@ -3,6 +3,7 @@
 require "at_linksafe/controller_extensions"
 require "at_linksafe/data_file"
 require "at_linksafe/email"
+require "at_linksafe/engine"
 require "at_linksafe/helper_extensions"
 require "at_linksafe/iname"
 require "at_linksafe/integer_money"
