@@ -9,7 +9,7 @@ module AtLinksafe
     end
 
     def string_to_dollars(dollar_str)
-      raise RuntimeError, "#{dollar_str} is not a string." unless 'String' == dollar_str.class.name
+      raise RuntimeError, "#{dollar_str} is not a string." unless dollar_str.is_a?(String)
       if ['0', '0.0', '0.00'].include?(dollar_str)
         0
       elsif dollar_str.include?('.')
@@ -20,7 +20,7 @@ module AtLinksafe
     end
 
     def cents_to_dollars(cents)
-      cents = cents.to_i if cents.is_a?(String)
+      cents = cents.to_i if !cents.is_a?(Integer)
       cents == 0 ? 0 : cents/100.0
     end
 
