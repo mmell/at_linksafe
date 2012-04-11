@@ -1,5 +1,5 @@
 *.bbprojectd
 *.gem
 .bundle
-Gemfile.lock
 pkg/*
+.DS_Store
