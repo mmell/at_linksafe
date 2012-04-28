@@ -13,7 +13,7 @@ module AtLinksafe
         if opts[:fade_delay_secs]
           s << %Q{
 <script>
-function fade_#{id}() { jQuery('##{id}').fadeOut(2000); }
+function fade_#{id}() { jQuery('##{id}').fadeOut(1000); }
 </script>
 <a href='#' onclick='javascript:fade_#{id}();return false;'>#{close_button_html}</a>
 }
