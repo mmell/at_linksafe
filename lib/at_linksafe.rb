@@ -112,7 +112,7 @@ COUNTRY_CODES = [["Afghanistan", "AF"],["Aland Islands", "AX"],["Albania ", "AL"
 ["Spain", "ES"],["Sri Lanka", "LK"],["Sudan", "SD"],["Suriname", "SR"],["Svalbard & Jan Mayen Islands", "SJ"],["Swaziland", "SZ"],
 ["Sweden", "SE"],["Switzerland", "CH"],["Syria", "SY"],["Taiwan", "TW"],["Tajikistan", "TJ"],["Tanzania", "TZ"],["Thailand", "TH"],
 ["Togo", "TG"],["Tokelau", "TK"],["Tonga", "TO"],["Trinidad and Tobago", "TT"],["Tunisia", "TN"],["Turkey", "TR"],["Turkmenistan", "TM"],
-["Turks and Caicos Islands", "TC"],["Tuvalu", "TV"],["Uganda", "UG"],["Ukraine", "UA"],["United Arab Emirates", "AE"],["United Kingdom", "UK"],
+["Turks and Caicos Islands", "TC"],["Tuvalu", "TV"],["Uganda", "UG"],["Ukraine", "UA"],["United Arab Emirates", "AE"],
 ["United States", "US"],["US Minor Outlying Islands", "UM"],["Uruguay", "UY"],["Uzbekistan", "UZ"],["Vanuatu", "VU"],
 ["Vatican City State (Holy See)", "VA"],["Venezuela", "VE"],["Viet Nam", "VN"],["British Virgin Islands ", "VG"],
 ["Virgin Islands (U.S.)", "VI"],["Wallis and Futuna Islands", "WF"],["Western Sahara", "EH"],["Yemen", "YE"],["Zambia", "ZM"],["Zaire", "ZR"],["Zimbabwe", "ZW"]
