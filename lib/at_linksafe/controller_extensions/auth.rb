@@ -7,7 +7,7 @@ module AtLinksafe
       end
 
       def redirect_to_default
-        url_for( :controller => 'main', :only_path => false )
+        root_url( :only_path => false )
       end
 
       def referer

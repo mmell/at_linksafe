@@ -3,7 +3,7 @@ module AtLinksafe
     module MessageHelper
 
       def close_button_html
-        "X (Close) " # you can override this method in a ActionView::Base.class_eval do...end
+        "X (Close) " # override this method in a ActionView::Base.class_eval do...end
       end
 
       def messages(arr, html_class, opts = {} )

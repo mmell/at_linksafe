@@ -1,0 +1,13 @@
+= AtLinksafe
+A set of modules and classes that Linksafe and its relying parties use for common
+tasks including but not limited to iname processing.
+
+== Installation
+=== Set up the Gemfile
+Include the AtLinksafe gem in your Rails application Gemfile:
+    gem 'at_linksafe', :git => 'git://github.com/mmell/at_linksafe.git'
+
+This project was originally available in the vendor/plugins of the Linksafe Ibroker
+on [Soureforge](http://linksafe.svn.sourceforge.net/viewvc/linksafe/rails/ibroker/trunk/vendor/plugins/at_linksafe)
+
+This project is released under the MIT-LICENSE.
