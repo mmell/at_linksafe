@@ -1,3 +1,3 @@
 require 'test/unit'
 require 'at_linksafe'
-require 'mocha'
+require 'mocha/setup'
