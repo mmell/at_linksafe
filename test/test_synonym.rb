@@ -1,13 +1,13 @@
 require 'test_helper'
 
 class TestSynonym < Test::Unit::TestCase
-  AtLinksafe::Synonym::PROXY_RESOLVER = 'http://proxy.example.com'
+  AtLinksafe::Synonym::ProxyResolver ||= 'http://proxy.example.com'
 
   def test_the_truth
     names = [
       '=mary',
       '=mary/',
-      "#{AtLinksafe::Synonym::PROXY_RESOLVER}/=mary",
+      "#{AtLinksafe::Synonym::ProxyResolver}/=mary",
       "xri://=mary",
       "xri://=mary/",
       "http://xri.net/=mary",

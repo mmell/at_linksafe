@@ -1,17 +1,16 @@
-# FIXME This comes from the ootao xdi lib. don't duplicate
-#   the IDP uses this lib
 require 'net/https'
 require 'uri'
 require 'rexml/document'
 require 'rexml/xpath'
-#require 'at_linksafe/xdi_status.rb'
 
 module AtLinksafe
 module Resolver
-#  PROXY_RESOLVER = 'http://beta.xri.net/'
+
   class Resolve
+
     attr_reader :xrds, :error_msg, :query, :response
-    DEBUG = true
+    DEBUG = false
+#    ProxyResolver ||= nil # 'http://beta.xri.net/'
     TYPE_XRDS = "application/xrds%2Bxml"
     TYPE_XRD = "application/xrd%2Bxml"
 
@@ -20,18 +19,22 @@ module Resolver
         )
       resolve( authority, sepType, sepMediaType, trustType, sepSelect, followRefs , contentType)
     end
+    
     def error(s)
       @error = true
       @error_msg = s
       false
     end
+    
     def valid?
       !@error
     end
+    
     def canonical_id
       return nil if @error
       xpath_first_text( @response, "//XRD[last()]/CanonicalID" ) #[@priority<=10]
     end
+    
     def canonical_ids
       return [nil] if @error
       map = []
@@ -40,8 +43,9 @@ module Resolver
     end
 
     def proxy_endpoint(endpoint = nil)
-      endpoint or PROXY_RESOLVER or 'http://xri.net/' 
+      endpoint or ProxyResolver or 'http://xri.net/' 
     end
+    
     def resolveViaProxy( authority, sepType, sepMediaType, trustType = nil, 
         sepSelect = true, followRefs = true , contentType = TYPE_XRD 
         ) 
