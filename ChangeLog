@@ -1,3 +1,8 @@
+2013-05-11  Michael Mell (mmell)
+	* version 2.0.2
+  * handle Synonym.normalize handles blank arguement
+  * BUG: rake tests work only if engine.rb is not required
+
 2013-04-10  Michael Mell (mmell)
 	* version 2.0.0
   * change PROXY_RESOLVER to ProxyResolver to match Ruby naming conventions

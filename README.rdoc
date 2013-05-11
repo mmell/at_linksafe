@@ -5,9 +5,14 @@ tasks including but not limited to iname processing.
 == Installation
 === Set up the Gemfile
 Include the AtLinksafe gem in your Rails application Gemfile:
-    gem 'at_linksafe', :git => 'git://github.com/mmell/at_linksafe.git'
+    gem 'at_linksafe', :github => 'mmell/at_linksafe'
 
 This project was originally available in the vendor/plugins of the Linksafe Ibroker
 on [Soureforge](http://linksafe.svn.sourceforge.net/viewvc/linksafe/rails/ibroker/trunk/vendor/plugins/at_linksafe)
+
+== To Do
+We don't need the engine behavior. The gem is simpler to maintain if we don't inject behavior in the controller and views. 
+Therefore, we should remove lib/at_linksafe/engine.rb. However, a rails app may be required to define module ProxyResolver 
+outside of this gem.
 
 This project is released under the MIT-LICENSE.
